@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI恋爱军师</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>AI恋爱军师</h1>
+        <p>上传TA的朋友圈截图（至少5张），让AI帮你分析性格、找到共同话题！</p>
+        
+        <div class="upload-section">
+            <input type="file" id="image-upload" multiple accept="image/*" style="display: none;">
+            <button id="upload-button">上传图片</button>
+            <div id="image-preview"></div>
+        </div>
+        
+        <button id="analyze-button" disabled>开始分析</button>
+        
+        <div id="analysis-result" class="hidden">
+            <h2>分析报告</h2>
+            <div id="result-content"></div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
